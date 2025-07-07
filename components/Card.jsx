@@ -71,7 +71,7 @@ const Card = () => {
                     {
                         "name": "Email",
                         "icon": "heroicons:envelope",
-                        "link": "janhvibhatt112@gmail.com"
+                        "link": "mailto:janhvibhatt112@gmail.com"
                     },
                 ]
             ]
@@ -99,17 +99,17 @@ const Card = () => {
                     {
                         "name": "Codeforces",
                         "icon": "simple-icons:codeforces",
-                        "link": "https://codeforces.com/profile/your_username"
+                        "link": "https://codeforces.com/profile/Janhvi.bhatt_"
                     },
                     {
                         "name": "HackerRank",
                         "icon": "simple-icons:hackerrank",
-                        "link": "https://www.hackerrank.com/your_username"
+                        "link": "https://www.hackerrank.com/profile/janhvibhatt112"
                     },
                     {
                         "name": "Coding Ninjas",
                         "icon": "simple-icons:codingninjas",
-                        "link": "https://www.codingninjas.com/studio/profile/your_username"
+                        "link": "https://www.naukri.com/code360/profile/janhviBhatt"
                     }
                 ]
             ]
@@ -122,7 +122,7 @@ const Card = () => {
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 px-6 sm:px-10 lg:px-24'>
                 {
                     items.map((item, index) => (
-                        <div key={index} className="bg-white shadow-md rounded-lg p-6 mb-6 glass-card">
+                        <div key={index} className="bg-white shadow-md rounded-lg p-6 mb-6 glass-card "data-aos="fade-up" >
                             <h2 className="text-3xl font-semibold mb-8 ">{item.title}</h2>
                             <p className="text-gray-300 mb-10">{item.description}</p>
                             <div className="flex flex-wrap gap-4">

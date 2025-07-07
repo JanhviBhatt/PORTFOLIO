@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 
 const Technical = () => {
     return (
-        <div className='bg-gray-800'>
+        <div className='bg-gray-800' >
             <Navbar />
             <div className="text-left px-10 lg:px-40 py-20 space-y-4">
                 <h1 className="text-5xl md:text-4xl font-bold text-gray-800 dark:text-white mb-2">

@@ -5,7 +5,7 @@ const Navbar = () => {
     const items = [
         { name: 'Home', href: '/home', icon: 'Home' },
         { name: 'About', href: '/about', icon: 'User' },
-        { name: 'Projects', href: '/projects', icon: 'Folder' },
+        { name: 'Projects', href: '/project', icon: 'Folder' },
         { name: 'Contact', href: '/contact', icon: 'Mail' }
     ];
     return (
