@@ -124,7 +124,7 @@ const Card = () => {
                     items.map((item, index) => (
                         <div key={index} className="bg-white shadow-md rounded-lg p-6 mb-6 glass-card">
                             <h2 className="text-3xl font-semibold mb-8 ">{item.title}</h2>
-                            <p className="text-gray-700 mb-10">{item.description}</p>
+                            <p className="text-gray-300 mb-10">{item.description}</p>
                             <div className="flex flex-wrap gap-4">
                                 {item.tech[0].map((tech, techIndex) => (
                                     <a
