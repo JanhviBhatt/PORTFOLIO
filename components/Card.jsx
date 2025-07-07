@@ -1,6 +1,6 @@
 import React from 'react'
 import 'devicon/devicon.min.css';
-import Navbar from './Navbar';
+import { Icon } from '@iconify/react';
 
 const Card = () => {
     const items = [
@@ -119,23 +119,24 @@ const Card = () => {
     ]
     return (
         <div>
-            <div className='flex flex-col items-center justify-center px-10 lg:px-100 space-y-4'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 px-6 sm:px-10 lg:px-24'>
                 {
                     items.map((item, index) => (
-                        <div key={index} className="bg-white shadow-md rounded-lg p-6 mb-6">
+                        <div key={index} className="bg-white shadow-md rounded-lg p-6 mb-6 glass-card">
                             <h2 className="text-3xl font-semibold mb-8 ">{item.title}</h2>
                             <p className="text-gray-700 mb-10">{item.description}</p>
                             <div className="flex flex-wrap gap-4">
                                 {item.tech[0].map((tech, techIndex) => (
                                     <a
                                         key={techIndex}
-                                        href={tech.link? tech.link : ''}
+                                        href={tech.link? tech.link : undefined}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="flex items-center space-x-2 bg-blue-100 hover:bg-blue-200 transition duration-300 rounded-lg px-4 py-2"
                                     >
                                         <button className="flex items-center space-x-2 bg-blue-100 hover:bg-blue-200 transition duration-300 rounded-lg px-4 py-2">
                                                 <i className={`${tech.icon} text-blue-500`}></i>
+                                                <Icon icon={tech.icon} className="text-blue-500" width="24" height="24" />
                                                 <span>{tech.name}</span>
                                         </button>
                                     </a>

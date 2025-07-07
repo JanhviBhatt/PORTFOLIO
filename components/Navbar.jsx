@@ -9,18 +9,20 @@ const Navbar = () => {
         { name: 'Contact', href: '/contact', icon: 'Mail' }
     ];
     return (
-        <div style={{
-            background: 'rgba(255, 255, 255, 0.25)',
-            boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-            backdropFilter: 'blur(5px)',
-        }} className='flex px-40 p-2 sticky top-0 left-0 right-0 z-50 text-blue-950'>
+        <div  className='flex px-40 p-4 sticky top-0 left-0 right-0 z-50 text-blue-950 glass-card'>
             {
                 items.map((item) => {
-                    const Icon = item.icon;
                     return (
-                        <a key={item.name} href={item.href} className="mx-4 text-lg font-semibold hover:text-blue-900">
-                        <Icon className="w-5 h-5" />
+                        <a key={item.name} href={item.href} className="mx-6 text-lg font-semibold hover:text-blue-900">
+                       <div className='flex'>
+                         {
+                            item.icon === 'Home' ? <Home className="inline mr-2" /> :
+                            item.icon === 'User' ? <User className="inline mr-2" /> :
+                            item.icon === 'Folder' ? <Folder className="inline mr-2" /> :
+                            item.icon === 'Mail' ? <Mail className="inline mr-2" /> : null
+                        }
                         <span>{item.name}</span>
+                       </div>
 
                     </a>
                     )

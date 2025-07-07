@@ -7,7 +7,7 @@ const Technical = () => {
         <div>
             <Navbar />
             <div className="text-left px-10 lg:px-40 py-20 space-y-4">
-                <h1 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-2">
+                <h1 className="text-5xl md:text-4xl font-bold text-gray-800 dark:text-white mb-2">
                     Technical Skills
                 </h1>
                 <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
