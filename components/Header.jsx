@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 const Header = () => {
   const router = useRouter()
   return (
-    <div className='flex flex-col lg:flex-row items-center justify-between gap-6'>
+    <div className='flex flex-col lg:flex-row items-center justify-between gap-6 p-10 sm:p-0'>
       <div className="flex flex-col items-start justify-center text-white p-10 lg:p-40 sm:pt-30 space-y-4">
         <h1 className="text-5xl lg:text-6xl font-bold typing-text text-blue-950">
           JANHVI BHATT...

@@ -15,7 +15,7 @@ const Navbar = () => {
             {
                 items.map((item) => {
                     return (
-                        <a key={item.name} href={item.href} className="mx-6 my-1 text-lg font-semibold cursor-pointer hover:text-blue-900 hover:bg-gray-300 transition-colors duration-300 p-1 rounded-lg flex items-center">
+                        <a key={item.name} href={item.href} className="sm:mx-6 mx-2 my-1 text-lg font-semibold cursor-pointer hover:text-blue-900 hover:bg-gray-300 transition-colors duration-300 p-1 rounded-lg flex items-center">
                        <div className='flex'>
                          {
                             item.icon === 'Home' ? <Home className="inline mr-2" /> :
