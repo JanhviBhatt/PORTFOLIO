@@ -38,9 +38,12 @@ const projects = [
 const Projects = () => {
   return (
     <div className="px-6 py-20 max-w-7xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-20 text-blue-950">
+      <h2 className="text-3xl font-bold text-center mb-10 text-blue-950">
         My Projects
       </h2>
+      <p className="text-center mb-10 text-gray-700 mb-20">
+        "Here’s a glimpse into the projects I’ve crafted — where ideas meet execution and technology turns into real-world impact."
+      </p>
       <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />

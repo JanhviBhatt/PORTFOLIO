@@ -21,7 +21,7 @@ const Contact = () => {
         console.log(e.target.value);
     }
   return (
-    <div className='mt-20 p-20 'data-aos="flip-left">
+    <div className='mt-20 p-20 'data-aos="fade-up">
       <h1 className='flex justify-center align-center text-4xl sm:text-3xl text-blue-950'>CONTACT FORM</h1>
         <form className="flex flex-col items-center justify-center p-10 space-y-4" onSubmit={handleSubmit}>
             <input
